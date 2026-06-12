@@ -210,3 +210,24 @@ button:hover{
 
     cursor:pointer;
 }
+#toggleMusic{
+    position:fixed;
+
+    top:20px;
+    right:20px;
+
+    width:50px;
+    height:50px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#8B1E3F;
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    z-index:9999;
+}
