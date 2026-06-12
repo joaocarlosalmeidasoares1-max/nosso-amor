@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Nosso Álbum ❤️</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
     <!-- Música -->
@@ -14,10 +19,8 @@
         <source src="musica.mp3" type="audio/mpeg">
     </audio>
 
-    <!-- Hero -->
+    <!-- Banner Principal -->
     <section class="hero">
-
-        <div class="overlay"></div>
 
         <div class="hero-content">
 
@@ -40,6 +43,7 @@
 
     </section>
 
+    <!-- Capítulos -->
     <section id="capitulos">
 
         <h2>Nossa História</h2>
@@ -58,80 +62,150 @@
                 🌄 Lugares e Aventuras
             </a>
 
-            <a href="#especiais" class="card">
-                💧 Momentos Especiais
-            </a>
-
             <a href="#familia" class="card">
                 👨‍👩‍👧‍👦 Família
+            </a>
+
+            <a href="#carta" class="card">
+                💌 Carta Final
             </a>
 
         </div>
 
     </section>
-    
-<section id="momentos" class="secao">
 
-    <h2>🐾 Nossos Momentos</h2>
+    <!-- Nossos Momentos -->
+    <section id="momentos" class="secao">
 
-    <div class="galeria">
+        <h2>🐾 Nossos Momentos</h2>
 
-        <div class="foto-card"
-             onclick="abrirModal(
-             'imgs/auau.jpg',
-             '🐶 Au Au',
-             'Texto da memória aqui')">
+        <div class="galeria">
 
-            <img src="imgs/auau.jpg">
-            <h3>🐶 Au Au</h3>
+            <div class="foto-card"
+                 onclick="abrirModal('imgs/auau.jpg','🐶 Au Au','Texto da memória aqui')">
+
+                <img src="imgs/auau.jpg">
+                <h3>🐶 Au Au</h3>
+
+            </div>
+
+            <div class="foto-card"
+                 onclick="abrirModal('imgs/azul.jpg','💙 Nosso Dia de Azul','Texto da memória aqui')">
+
+                <img src="imgs/azul.jpg">
+                <h3>💙 Nosso Dia de Azul</h3>
+
+            </div>
+
+            <div class="foto-card"
+                 onclick="abrirModal('imgs/caretas.jpg','😆 Caretas','Texto da memória aqui')">
+
+                <img src="imgs/caretas.jpg">
+                <h3>😆 Caretas</h3>
+
+            </div>
+
+            <div class="foto-card"
+                 onclick="abrirModal('imgs/batismo.jpg','💧 Batismo da Minha Princesa','Texto da memória aqui')">
+
+                <img src="imgs/batismo.jpg">
+                <h3>💧 Batismo</h3>
+
+            </div>
 
         </div>
 
-        <div class="foto-card"
-             onclick="abrirModal(
-             'imgs/azul.jpg',
-             '💙 Nosso Dia de Azul',
-             'Texto da memória aqui')">
+    </section>
 
-            <img src="imgs/azul.jpg">
-            <h3>💙 Nosso Dia de Azul</h3>
+    <!-- Nosso Compromisso -->
+    <section id="compromisso" class="secao">
 
-        </div>
+        <h2>💍 Nosso Compromisso</h2>
 
-        <div class="foto-card"
-             onclick="abrirModal(
-             'imgs/caretas.jpg',
-             '😆 Nossos Momentos Aleatórios',
-             'Texto da memória aqui')">
+        <div class="galeria">
 
-            <img src="imgs/caretas.jpg">
-            <h3>😆 Caretas</h3>
+            <div class="foto-card"
+                 onclick="abrirModal('imgs/aliancas.jpg','💍 Nosso Compromisso','Texto da memória aqui')">
+
+                <img src="imgs/aliancas.jpg">
+                <h3>💍 Nosso Compromisso</h3>
+
+            </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
+    <!-- Lugares e Aventuras -->
+    <section id="aventuras" class="secao">
 
+        <h2>🌄 Lugares e Aventuras</h2>
+
+        <div class="galeria">
+
+            <div class="foto-card"
+                 onclick="abrirModal('imgs/serra.jpg','🌄 Ensaio na Serra','Texto da memória aqui')">
+
+                <img src="imgs/serra.jpg">
+                <h3>🌄 Ensaio na Serra</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Família -->
+    <section id="familia" class="secao">
+
+        <h2>👨‍👩‍👧‍👦 Família</h2>
+
+        <div class="galeria">
+
+            <div class="foto-card"
+                 onclick="abrirModal('imgs/familia.jpg','👨‍👩‍👧‍👦 Família','Texto da memória aqui')">
+
+                <img src="imgs/familia.jpg">
+                <h3>👨‍👩‍👧‍👦 Família</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Carta -->
+    <section id="carta" class="secao">
+
+        <h2>💌 Carta Final</h2>
+
+        <p style="text-align:center;">
+            Em breve sua carta especial estará aqui ❤️
+        </p>
+
+    </section>
+
+    <!-- Modal -->
     <div id="modal" class="modal">
 
-    <div class="modal-content">
+        <div class="modal-content">
 
-        <span class="fechar"
-              onclick="fecharModal()">
-              ✖
-        </span>
+            <span class="fechar"
+                  onclick="fecharModal()">
+                  ✖
+            </span>
 
-        <img id="modal-img">
+            <img id="modal-img">
 
-        <h2 id="modal-titulo"></h2>
+            <h2 id="modal-titulo"></h2>
 
-        <p id="modal-texto"></p>
+            <p id="modal-texto"></p>
+
+        </div>
 
     </div>
 
-</div>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
