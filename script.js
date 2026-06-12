@@ -37,3 +37,18 @@ function fecharModal(){
     document.getElementById("modal")
     .style.display = "none";
 }
+const botaoMusica = document.getElementById("toggleMusic");
+
+botaoMusica.addEventListener("click", () => {
+
+    if(musica.paused){
+
+        musica.play();
+
+    }else{
+
+        musica.pause();
+
+    }
+
+});
