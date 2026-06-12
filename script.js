@@ -1,4 +1,5 @@
 const musica = document.getElementById("musica");
+musica.volume = 0.5;
 const botao = document.getElementById("startBtn");
 
 botao.addEventListener("click", () => {
