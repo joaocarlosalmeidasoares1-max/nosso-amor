@@ -14,14 +14,15 @@
 
 <body>
 
-     <button id="toggleMusic">🎵</button>
-    
+    <!-- Botão Música -->
+    <button id="toggleMusic">🎵</button>
+
     <!-- Música -->
     <audio id="musica" loop>
         <source src="musica.mp3" type="audio/mpeg">
     </audio>
 
-    <!-- Banner Principal -->
+    <!-- Banner -->
     <section class="hero">
 
         <div class="hero-content">
@@ -32,9 +33,9 @@
             </h1>
 
             <p>
-                Para minha Girassol,
-                minha Princesa,
-                minha Linda Flor.
+                Para minha Girassol 🌻,
+                minha Princesa 👑,
+                minha Linda Flor 💐
             </p>
 
             <button id="startBtn">
@@ -46,6 +47,7 @@
     </section>
 
     <!-- Capítulos -->
+
     <section id="capitulos">
 
         <h2>Nossa História</h2>
@@ -76,125 +78,15 @@
 
     </section>
 
-    <!-- Nossos Momentos -->
-    <section id="momentos" class="secao">
-
-        <h2>🐾 Nossos Momentos</h2>
-
-        <div class="galeria">
-
-            <div class="foto-card"
-                 onclick="abrirModal('imgs/auau.jpg','🐶 Au Au','Texto da memória aqui')">
-
-                <img src="imgs/auau.jpg">
-                <h3>🐶 Au Au</h3>
-
-            </div>
-
-            <div class="foto-card"
-                 onclick="abrirModal('imgs/azul.jpg','💙 Nosso Dia de Azul','Texto da memória aqui')">
-
-                <img src="imgs/azul.jpg">
-                <h3>💙 Nosso Dia de Azul</h3>
-
-            </div>
-
-            <div class="foto-card"
-                 onclick="abrirModal('imgs/caretas.jpg','😆 Caretas','Texto da memória aqui')">
-
-                <img src="imgs/caretas.jpg">
-                <h3>😆 Caretas</h3>
-
-            </div>
-
-            <div class="foto-card"
-                 onclick="abrirModal('imgs/batismo.jpg','💧 Batismo da Minha Princesa','Texto da memória aqui')">
-
-                <img src="imgs/batismo.jpg">
-                <h3>💧 Batismo</h3>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Nosso Compromisso -->
-    <section id="compromisso" class="secao">
-
-        <h2>💍 Nosso Compromisso</h2>
-
-        <div class="galeria">
-
-            <div class="foto-card"
-                 onclick="abrirModal('imgs/aliancas.jpg','💍 Nosso Compromisso','Texto da memória aqui')">
-
-                <img src="imgs/aliancas.jpg">
-                <h3>💍 Nosso Compromisso</h3>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Lugares e Aventuras -->
-    <section id="aventuras" class="secao">
-
-        <h2>🌄 Lugares e Aventuras</h2>
-
-        <div class="galeria">
-
-            <div class="foto-card"
-                 onclick="abrirModal('imgs/serra.jpg','🌄 Ensaio na Serra','Texto da memória aqui')">
-
-                <img src="imgs/serra.jpg">
-                <h3>🌄 Ensaio na Serra</h3>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Família -->
-    <section id="familia" class="secao">
-
-        <h2>👨‍👩‍👧‍👦 Família</h2>
-
-        <div class="galeria">
-
-            <div class="foto-card"
-                 onclick="abrirModal('imgs/familia.jpg','👨‍👩‍👧‍👦 Família','Texto da memória aqui')">
-
-                <img src="imgs/familia.jpg">
-                <h3>👨‍👩‍👧‍👦 Família</h3>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Carta -->
-    <section id="carta" class="secao">
-
-        <h2>💌 Carta Final</h2>
-
-        <p style="text-align:center;">
-            Em breve sua carta especial estará aqui ❤️
-        </p>
-
-    </section>
-
     <!-- Modal -->
+
     <div id="modal" class="modal">
 
         <div class="modal-content">
 
             <span class="fechar"
-                  onclick="fecharModal()">
-                  ✖
+                onclick="fecharModal()">
+                ✖
             </span>
 
             <img id="modal-img">
@@ -210,4 +102,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
