@@ -4,7 +4,7 @@ musica.volume = 0.5;
 
 botao.addEventListener("click", () => {
 
-    musica.volume = 0.1;
+    musica.volume = 0;
     console.log("Volume:", musica.volume);
     musica.play();
 
