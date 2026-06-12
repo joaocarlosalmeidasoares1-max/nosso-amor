@@ -69,7 +69,68 @@
         </div>
 
     </section>
+    
+<section id="momentos" class="secao">
 
+    <h2>🐾 Nossos Momentos</h2>
+
+    <div class="galeria">
+
+        <div class="foto-card"
+             onclick="abrirModal(
+             'imgs/auau.jpg',
+             '🐶 Au Au',
+             'Texto da memória aqui')">
+
+            <img src="imgs/auau.jpg">
+            <h3>🐶 Au Au</h3>
+
+        </div>
+
+        <div class="foto-card"
+             onclick="abrirModal(
+             'imgs/azul.jpg',
+             '💙 Nosso Dia de Azul',
+             'Texto da memória aqui')">
+
+            <img src="imgs/azul.jpg">
+            <h3>💙 Nosso Dia de Azul</h3>
+
+        </div>
+
+        <div class="foto-card"
+             onclick="abrirModal(
+             'imgs/caretas.jpg',
+             '😆 Nossos Momentos Aleatórios',
+             'Texto da memória aqui')">
+
+            <img src="imgs/caretas.jpg">
+            <h3>😆 Caretas</h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <div id="modal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="fechar"
+              onclick="fecharModal()">
+              ✖
+        </span>
+
+        <img id="modal-img">
+
+        <h2 id="modal-titulo"></h2>
+
+        <p id="modal-texto"></p>
+
+    </div>
+
+</div>
 <script src="script.js"></script>
 
 </body>
