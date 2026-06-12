@@ -4,6 +4,8 @@ musica.volume = 0.5;
 
 botao.addEventListener("click", () => {
 
+    musica.volume = 0.4;
+    
     musica.play();
 
     document
