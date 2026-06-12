@@ -1,54 +1,52 @@
 const musica = document.getElementById("musica");
-const botao = document.getElementById("startBtn");
-musica.volume = 0.5;
+const botaoInicio = document.getElementById("startBtn");
+const botaoMusica = document.getElementById("toggleMusic");
 
-botao.addEventListener("click", () => {
+// Volume inicial
+musica.volume = 0.15;
 
-    musica.volume = 0.5;
+// Botão "Começar a Jornada"
+botaoInicio.addEventListener("click", () => {
 
+    // Inicia a música
     musica.play();
 
-});
-
-    document
-    .getElementById("capitulos")
-    .scrollIntoView({
-        behavior:"smooth"
+    // Vai para a seção dos capítulos
+    document.getElementById("capitulos").scrollIntoView({
+        behavior: "smooth"
     });
 
 });
-function abrirModal(imagem,titulo,texto){
 
-    document.getElementById("modal")
-    .style.display = "flex";
-
-    document.getElementById("modal-img")
-    .src = imagem;
-
-    document.getElementById("modal-titulo")
-    .innerText = titulo;
-
-    document.getElementById("modal-texto")
-    .innerText = texto;
-}
-
-function fecharModal(){
-
-    document.getElementById("modal")
-    .style.display = "none";
-}
-const botaoMusica = document.getElementById("toggleMusic");
-
+// Botão de música
 botaoMusica.addEventListener("click", () => {
 
-    if(musica.paused){
+    if (musica.paused) {
 
         musica.play();
+        botaoMusica.innerHTML = "🎵";
 
-    }else{
+    } else {
 
         musica.pause();
+        botaoMusica.innerHTML = "🔇";
 
     }
 
 });
+
+// Modal
+function abrirModal(imagem, titulo, texto) {
+
+    document.getElementById("modal").style.display = "flex";
+
+    document.getElementById("modal-img").src = imagem;
+    document.getElementById("modal-titulo").innerText = titulo;
+    document.getElementById("modal-texto").innerText = texto;
+}
+
+function fecharModal() {
+
+    document.getElementById("modal").style.display = "none";
+
+}
