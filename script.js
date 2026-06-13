@@ -56,3 +56,39 @@ function fecharModal() {
     document.getElementById("modal").style.display = "none";
 
 }
+const dataNamoro = new Date("2026-05-08T00:00:00");
+
+function atualizarContador(){
+
+    const agora = new Date();
+
+    const diferenca = agora - dataNamoro;
+
+    const dias =
+        Math.floor(diferenca / (1000 * 60 * 60 * 24));
+
+    const horas =
+        agora.getHours();
+
+    const minutos =
+        agora.getMinutes();
+
+    const segundos =
+        agora.getSeconds();
+
+    document.getElementById("dias").innerText =
+        dias;
+
+    document.getElementById("horas").innerText =
+        horas;
+
+    document.getElementById("minutos").innerText =
+        minutos;
+
+    document.getElementById("segundos").innerText =
+        segundos;
+}
+
+setInterval(atualizarContador,1000);
+
+atualizarContador();
