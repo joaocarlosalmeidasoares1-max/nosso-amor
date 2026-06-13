@@ -328,3 +328,61 @@ body{
 
     color:#8B1E3F;
 }
+.envelope{
+
+    width:250px;
+
+    margin:40px auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+}
+
+.envelope:hover{
+
+    transform:scale(1.05);
+}
+
+.envelope-frente{
+
+    font-size:60px;
+}
+
+.envelope-frente p{
+
+    font-size:18px;
+
+    margin-top:15px;
+}
+
+.carta-escondida{
+
+    display:none;
+
+    max-width:700px;
+
+    margin:30px auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.1);
+
+    line-height:1.8;
+}
