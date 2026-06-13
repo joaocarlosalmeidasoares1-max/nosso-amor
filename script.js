@@ -38,8 +38,6 @@ botaoMusica.addEventListener("click", () => {
 // Modal
 function abrirModal(imagem, titulo, texto){
 
-    alert("Modal abriu!");
-
     document.getElementById("modal")
     .style.display = "flex";
 
